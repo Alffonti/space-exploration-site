@@ -1,0 +1,38 @@
+body{
+    margin: 0; /* browsers add some margin to the body by default. Adding a background or specifying a value overrride the default*/
+    color: #82A5CA; /* I extracted a color palette from the 'galaxy.webp' photo using https://coolors.co/image-picker and save it: https://coolors.co/19181a-3b3f50-82a5ca   */
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;  /* I specified the Orbitron font family to the body element */
+}
+
+/* Use an id class when the element is unique and not reused in the website  */
+#main-logo{
+    width: 150px;
+}
+
+
+#hero{
+    background: url("images/galaxy.webp"); /* I searched for 'galaxy' in Giphy.com and selected an .gif image from the website. Then I convert it to .webp with Convertio.co*/
+    /* I could have also searched for 'galaxy' in Unsplash.com and download it */
+    background-size: cover;
+    padding: 10px 0 40px;
+}
+
+/* I added a thin blurred border around the text to improve readibility. */
+#title{
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 0 0 4px black; 
+}
+
+/* Buttons do not inherit the text 'color' and the 'font-family' from its parent element. I have to specify them.*/
+.btn{
+    background: white; /* By default, browsers add a greyish backgorund to buttons */
+    color: #82A5CA;
+    font-family: inherit;
+    padding: 6px 12px;
+    border: none; /* By default, browsers add borders to buttons */
+}
+
+#underline{
+    border-bottom: 4px solid white;
+}
